@@ -18,7 +18,7 @@ source base.sh
 
 run . rm -rf data/*/build
 
-fuser -k -n tcp 8080
+fuser -k -n tcp 8081
 fuser -k -n tcp 9160
 
 # Run migration of project directory structure for codeworld-server.
@@ -30,4 +30,4 @@ run . codeworld-server-migrate
 mkdir -p log
 
 codeworld-game-server +RTS -T &
-run .  codeworld-server -p 8080 --no-access-log
+run .  codeworld-server -p 8081 --no-access-log

@@ -219,7 +219,7 @@ if [ ! -f $BUILD/progress/ghcjs ]; then
   run $BUILD/ghcjs ./utils/makePackages.sh
   run $BUILD/ghcjs cabal v2-install . --symlink-bindir=$BUILD/bin -j1 --disable-documentation --overwrite-policy=always
 
-  run $BUILD/bin   fix_libexec_binary ghcjs-boot
+  run $BUILD/bin   fix_libexec_binary ghcjs-boot -j2
   run $BUILD/bin   fix_libexec_binary ghcjs-run
   run $BUILD/bin   fix_libexec_binary ghcjs-dumparchive
 

@@ -1,0 +1,8 @@
+language: minimal
+dist: trusty
+
+install:
+- ./install.sh
+
+script:
+- ./test.sh

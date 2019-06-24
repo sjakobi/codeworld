@@ -2,7 +2,7 @@ language: minimal
 dist: xenial
 
 install:
-- ./install.sh
+- travis_wait ./install.sh
 
 script:
 - ./test.sh

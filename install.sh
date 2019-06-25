@@ -247,5 +247,7 @@ fi
 run . git submodule init
 run . git submodule update
 
+run . df -h
+
 # Go ahead and run a first build, which installs more local packages.
 ./build.sh

@@ -22,7 +22,7 @@ run .  cabal update
 
 # Install the codeworld-base and codeworld-api packages
 
-run .  cabal_install --ghcjs --ghc-options -O0 \
+run .  cabal_install --ghcjs --ghc-options -O0 -v \
                              ./codeworld-prediction \
                              ./codeworld-error-sanitizer \
                              ./codeworld-api \
